@@ -1,0 +1,23 @@
+.whatsapp-float {
+  position: fixed;
+  bottom: var(--space-md);
+  right: var(--space-md);
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.8rem;
+  background: var(--emerald-brand);
+  color: var(--marfil-paper);
+  border-radius: var(--radius-pill);
+  padding: var(--space-sm) var(--space-md);
+  box-shadow: 0 8px 20px rgba(5, 35, 23, 0.25);
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-2px);
+  background: var(--emerald-night);
+}

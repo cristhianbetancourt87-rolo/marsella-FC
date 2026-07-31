@@ -1,0 +1,142 @@
+@import url('components/buttons.css');
+@import url('components/navbar.css');
+@import url('components/hero.css');
+@import url('components/statbar.css');
+@import url('components/mirror.css');
+@import url('components/testimonial.css');
+@import url('components/offer.css');
+@import url('components/playercard.css');
+@import url('components/faq.css');
+@import url('components/modal.css');
+@import url('components/whatsapp-float.css');
+
+/* Reset moderno */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+img, picture, video, canvas, svg { display: block; max-width: 100%; }
+input, button, textarea, select { font: inherit; color: inherit; }
+ul[role='list'], ol[role='list'] { list-style: none; }
+
+:root {
+  /* Paleta locked */
+  --emerald-brand: #0B4A30;
+  --emerald-night: #052317;
+  --gold-vintage: #C89B3C;
+  --marfil-paper: #F4F0EA;
+  --charcoal-black: #121212;
+
+  /* Espaciado (escala 8px) */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+
+  /* Breakpoints (referencia, usados en @media) */
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+
+  /* Tipografía */
+  --font-display: 'Unbounded', sans-serif;
+  --font-mono: 'Space Grotesk', monospace;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+
+  --border-hairline: 1px solid rgba(18, 18, 18, 0.12);
+  --radius-sm: 8px;
+  --radius-pill: 9999px;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  background: var(--marfil-paper);
+  color: var(--charcoal-black);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  overflow-wrap: break-word;
+}
+
+a { color: inherit; text-decoration: none; }
+
+:focus-visible {
+  outline: 3px solid var(--gold-vintage);
+  outline-offset: 2px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: var(--space-md);
+}
+
+.section {
+  padding-block: var(--space-2xl);
+}
+
+.kicker {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--emerald-brand);
+  margin-bottom: var(--space-sm);
+}
+
+.kicker--gold { color: var(--gold-vintage); }
+
+.section__title {
+  font-size: clamp(1.75rem, 5vw + 1rem, 2.75rem);
+  margin-bottom: var(--space-lg);
+  max-width: 40ch;
+}
+
+.pill {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.85rem;
+  border: var(--border-hairline);
+  border-radius: var(--radius-pill);
+  padding: var(--space-xs) var(--space-md);
+  margin-block: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .container { padding-inline: var(--space-xl); }
+}
+
+/* Motivo de cancha: arco de esquina sutil para fondos oscuros (reemplaza la textura diagonal) */
+.pitch-corner {
+  position: relative;
+  overflow: hidden;
+}
+
+.pitch-corner::before {
+  content: '';
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border: 1px solid rgba(200, 155, 60, 0.14);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.pitch-corner--top-right::before { top: -160px; right: -160px; }
+.pitch-corner--bottom-left::before { bottom: -160px; left: -160px; }

@@ -1,0 +1,60 @@
+.faq__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq__item {
+  padding-block: var(--space-md);
+  border-bottom: var(--border-hairline);
+}
+
+.faq__item:last-child { border-bottom: none; }
+
+.faq__item summary {
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--charcoal-black);
+}
+
+.faq__item p {
+  margin-top: var(--space-sm);
+  color: rgba(18, 18, 18, 0.7);
+  line-height: 1.5;
+}
+
+.footer {
+  background: var(--emerald-night);
+  color: var(--marfil-paper);
+  padding-block: var(--space-xl);
+  margin-top: var(--space-2xl);
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  text-align: center;
+}
+
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+.footer__slogan {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--gold-vintage);
+}
+
+.footer__copy {
+  font-size: 0.75rem;
+  opacity: 0.6;
+}

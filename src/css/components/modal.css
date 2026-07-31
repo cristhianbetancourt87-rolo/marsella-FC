@@ -1,0 +1,73 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+}
+
+.modal[data-open='true'] { display: flex; }
+
+.modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 35, 23, 0.7);
+}
+
+.modal__panel {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: var(--marfil-paper);
+  border: var(--border-hairline);
+  border-radius: var(--radius-sm);
+  padding: var(--space-xl) var(--space-lg) var(--space-lg);
+}
+
+.modal__close {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal__title {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-md);
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.field { display: flex; flex-direction: column; gap: var(--space-xs); }
+
+.field label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.field input,
+.field select {
+  border: var(--border-hairline);
+  border-radius: var(--radius-sm);
+  padding: var(--space-sm);
+  background: #fff;
+}
+
+.field__error {
+  color: #a3282b;
+  font-size: 0.85rem;
+}

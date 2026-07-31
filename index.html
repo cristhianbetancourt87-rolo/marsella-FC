@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marsella F.C. | Escuela de Fútbol en Bogotá desde 1986</title>
+  <meta name="description" content="Marsella F.C.: 40 años formando futbolistas y personas en Bogotá. Clase de evaluación 100% gratis, inscripción 365 días al año y pago proporcional.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Marsella F.C. | Nuestra historia, tu futuro.">
+  <meta property="og:description" content="40 años de formación integral en Bogotá. Reclama tu Pase de 3 Clases Gratis sin compromiso ni tarjeta de crédito.">
+  <meta property="og:image" content="assets/images/escudo-web.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Marsella F.C. | Nuestra historia, tu futuro.">
+  <meta name="twitter:description" content="40 años de formación integral en Bogotá. Reclama tu Pase de 3 Clases Gratis.">
+
+  <link rel="icon" type="image/png" href="assets/images/escudo-web.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;800&family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="src/css/main.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "Marsella F.C.",
+    "description": "Escuela de formación de fútbol en Bogotá, Colombia. Fundada en 1986.",
+    "foundingDate": "1986",
+    "sport": "Fútbol",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bogotá",
+      "addressCountry": "CO"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Bloque 1: Navbar -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="#hero" class="navbar__brand">
+        <span class="navbar__name">MARSELLA F.C.</span>
+      </a>
+      <div class="navbar__right">
+        <nav class="navbar__links" aria-label="Navegación principal">
+          <a href="#paths">Rutas</a>
+          <a href="#testimonial">Testimonios</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <span class="navbar__badge">BOGOTÁ &bull; EST. 1986</span>
+        <button type="button" class="btn navbar__cta btn--sm" data-modal-open>Pase Gratis</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Bloque 2: Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="kicker">01 // FORMACIÓN DEPORTIVA DESDE 1986</p>
+          <h1 class="hero__title">Nuestra historia,<br><span class="hero__title-accent">tu futuro.</span></h1>
+          <p class="hero__subtitle">40 años formando futbolistas y personas íntegras en Bogotá. Desarrollo humano, inteligencia de juego y <strong>progreso visible desde el primer mes</strong>.</p>
+          <p class="pill">💳 Pago Proporcional — Inscríbete cualquier día del año</p>
+          <div class="hero__actions">
+            <button type="button" class="btn btn--primary" data-modal-open>🎫 Reclamar Pase de 3 Clases Gratis</button>
+            <a href="#faq" class="btn btn--ghost">Ver preguntas frecuentes</a>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <img src="assets/images/escudo-web.png" alt="" class="hero__crest" width="400" height="468" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloque 3: Barra de Autoridad -->
+    <section class="statbar" aria-label="Datos institucionales">
+      <div class="container statbar__grid">
+        <div class="stat">
+          <p class="stat__num">1986</p>
+          <p class="stat__label">Año de fundación</p>
+        </div>
+        <div class="stat">
+          <p class="stat__num stat__num--accent">10K+</p>
+          <p class="stat__label">Alumnos formados</p>
+        </div>
+        <div class="stat">
+          <p class="stat__num">365</p>
+          <p class="stat__label">Días de inscripción</p>
+        </div>
+        <div class="stat">
+          <p class="stat__num stat__num--accent">+</p>
+          <p class="stat__label">Cancha + cuaderno</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloque 4: El Espejo de la Realidad -->
+    <section class="mirror pitch-corner pitch-corner--top-right" id="mirror">
+      <div class="container mirror__inner">
+        <p class="kicker kicker--gold">02 // EL ESPEJO DE LA REALIDAD</p>
+        <h2 class="mirror__title">Lo que ya conoces vs. <span class="mirror__title-accent">lo que mereces</span></h2>
+        <div class="scoreboard" id="mirror-scoreboard">
+          <span class="scoreboard__team scoreboard__team--them">Escuelas<br>tradicionales</span>
+          <span class="scoreboard__result"><span id="score-them">0</span> — <span id="score-us" aria-live="polite">0</span></span>
+          <span class="scoreboard__team scoreboard__team--us">Marsella<br>F.C.</span>
+        </div>
+        <div class="verdicts">
+          <div class="verdict-row" data-score-trigger>
+            <p class="verdict-row__gain">Minutos de juego <em>garantizados</em> en etapa formativa para todos.</p>
+            <p class="verdict-row__pain">✕ Otras escuelas: te gritan o te dejan en la banca <span class="stamp">Descartado</span></p>
+          </div>
+          <div class="verdict-row" data-score-trigger>
+            <p class="verdict-row__gain">Filosofía <em>Cancha + Cuaderno</em>, con profesores evaluados semanalmente.</p>
+            <p class="verdict-row__pain">✕ Otras escuelas: metodología improvisada, sin seguimiento <span class="stamp">Descartado</span></p>
+          </div>
+          <div class="verdict-row" data-score-trigger>
+            <p class="verdict-row__gain">Inscripción <em>365 días al año</em> con pago proporcional a los días restantes.</p>
+            <p class="verdict-row__pain">✕ Otras escuelas: solo a principio de mes o de año <span class="stamp">Descartado</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloque 5: Testimonios -->
+    <section class="testimonial pitch-corner pitch-corner--bottom-left" id="testimonial">
+      <div class="container">
+        <p class="kicker kicker--gold">03 // LO QUE DICEN LAS FAMILIAS</p>
+        <h2 class="testimonial__title">Historias reales de nuestra cancha</h2>
+        <div class="testimonial__grid">
+          <article class="testimonial-card">
+            <span class="testimonial-card__mark" aria-hidden="true">&ldquo;</span>
+            <blockquote class="testimonial-card__quote">Desde que empezó en Marsella, veo a mi hijo más seguro dentro y fuera de la cancha. Los profesores no solo entrenan fútbol, forman personas.</blockquote>
+            <p class="testimonial-card__author">Nombre del acudiente — Escuela Formativa</p>
+          </article>
+          <article class="testimonial-card">
+            <span class="testimonial-card__mark" aria-hidden="true">&ldquo;</span>
+            <blockquote class="testimonial-card__quote">Nos inscribimos a mitad de mes sin complicaciones y sin pagar de más. Eso ya dice mucho del trato que tienen con las familias.</blockquote>
+            <p class="testimonial-card__author">Nombre del acudiente — Escuela Formativa</p>
+          </article>
+          <article class="testimonial-card">
+            <span class="testimonial-card__mark" aria-hidden="true">&ldquo;</span>
+            <blockquote class="testimonial-card__quote">El nivel de exigencia me ayudó a dar el salto que necesitaba para competir en serio.</blockquote>
+            <p class="testimonial-card__author">Nombre del jugador — Alto Rendimiento</p>
+          </article>
+        </div>
+        <p class="testimonial__pending">Testimonios reales pendientes de recopilar con familias del club</p>
+      </div>
+    </section>
+
+    <!-- Bloque 6: Garantía Cero Riesgo & Oferta -->
+    <section class="offer" id="offer">
+      <span class="offer__watermark" aria-hidden="true">1986</span>
+      <div class="container offer__inner">
+        <p class="kicker">04 // GARANTÍA CERO RIESGO</p>
+        <h2 class="offer__title">Pruébalo sin compromiso ni tarjeta de crédito</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">01</span>
+            <p class="step__text">Reclama tu Pase de 3 Clases Gratis en el formulario.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">02</span>
+            <p class="step__text">Coordinamos por WhatsApp el horario que mejor te sirva.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">03</span>
+            <p class="step__text">Si decides continuar, solo pagas los días restantes del mes.</p>
+          </li>
+        </ol>
+        <button type="button" class="btn btn--primary" data-modal-open>🎫 Reclamar Pase de 3 Clases Gratis</button>
+      </div>
+    </section>
+
+    <!-- Bloque 7: Rutas de Formación -->
+    <section class="paths pitch-corner pitch-corner--bottom-left" id="paths">
+      <div class="container paths__inner">
+        <p class="kicker kicker--gold">05 // RUTAS DE FORMACIÓN</p>
+        <h2 class="paths__title">Una ruta para cada etapa</h2>
+        <div class="paths__grid">
+          <article class="ticket">
+            <span class="ticket__notch ticket__notch--top" aria-hidden="true"></span>
+            <span class="ticket__notch ticket__notch--bottom" aria-hidden="true"></span>
+            <div class="ticket__stub">
+              <span class="ticket__stub-num">N.° 01</span>
+              <span class="ticket__stub-label">MFC 1986</span>
+            </div>
+            <div class="ticket__body">
+              <span class="ticket__badge">Formación</span>
+              <p class="ticket__category">Escuela Formativa</p>
+              <h3 class="ticket__age">5 a 14 años</h3>
+              <p class="ticket__text">Desarrollo humano, valores y minutos de juego garantizados.</p>
+              <p class="ticket__footer">⚽ Cancha + 📓 Cuaderno · <strong>Cuerpo técnico certificado</strong></p>
+            </div>
+          </article>
+          <article class="ticket">
+            <span class="ticket__notch ticket__notch--top" aria-hidden="true"></span>
+            <span class="ticket__notch ticket__notch--bottom" aria-hidden="true"></span>
+            <div class="ticket__stub">
+              <span class="ticket__stub-num">N.° 02</span>
+              <span class="ticket__stub-label">MFC 1986</span>
+            </div>
+            <div class="ticket__body">
+              <span class="ticket__badge">Formación</span>
+              <p class="ticket__category">Alto Rendimiento</p>
+              <h3 class="ticket__age">15 a 20 años</h3>
+              <p class="ticket__text">Nivel técnico competitivo y proyección a torneos.</p>
+              <p class="ticket__footer">⚽ Cancha + 📓 Cuaderno · <strong>Cuerpo técnico certificado</strong></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloque 8: FAQ -->
+    <section class="section faq" id="faq">
+      <div class="container">
+        <p class="kicker">06 // PREGUNTAS FRECUENTES</p>
+        <h2 class="section__title">Resolvemos tus dudas</h2>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary>¿Tengo que esperar a principio de mes o de año para inscribirme?</summary>
+            <p>No. Las inscripciones están abiertas los 365 días del año y solo pagas los días restantes del mes gracias al Pago Proporcional.</p>
+          </details>
+          <details class="faq__item">
+            <summary>¿Qué pasa si pago y a mi hijo no le gusta?</summary>
+            <p>Por eso existe el Pase de Evaluación de 3 Clases Gratis: pruebas sin compromiso ni tarjeta de crédito antes de decidir.</p>
+          </details>
+          <details class="faq__item">
+            <summary>¿Cómo es el trato hacia los niños y jóvenes?</summary>
+            <p>Aplicamos la filosofía Cancha + Cuaderno: minutos de juego garantizados en etapa formativa y profesores evaluados semanalmente.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span>MARSELLA F.C. &bull; BOGOTÁ, COLOMBIA</span>
+      </div>
+      <p class="footer__slogan">"Nuestra historia, tu futuro."</p>
+      <p class="footer__copy">&copy; 2026 Marsella F.C. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp (Vía B) -->
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/573000000000?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Marsella%20F.C."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Hablar por WhatsApp"
+  >💬 Hablar por WhatsApp</a>
+
+  <!-- Modal de captura (Vía A) -->
+  <div class="modal" id="lead-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__panel">
+      <button type="button" class="modal__close" data-modal-close aria-label="Cerrar formulario">&times;</button>
+      <p class="kicker">PASE DE EVALUACIÓN</p>
+      <h2 class="modal__title" id="modal-title">Reclama tus 3 Clases Gratis</h2>
+      <form id="lead-form" class="modal__form" novalidate>
+        <div class="field">
+          <label for="parent-name">Nombre completo del Padre/Acudiente</label>
+          <input type="text" id="parent-name" name="parentName" required minlength="3" autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="whatsapp-number">Número de WhatsApp</label>
+          <input type="tel" id="whatsapp-number" name="whatsappNumber" required pattern="[0-9+ ]{7,15}" autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="child-age">Edad del niño/joven</label>
+          <input type="number" id="child-age" name="childAge" required min="5" max="20">
+        </div>
+        <div class="field">
+          <label for="category">Categoría de interés</label>
+          <select id="category" name="category" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="Formativa 5-14">Formativa 5-14</option>
+            <option value="Alto Rendimiento 15-20">Alto Rendimiento 15-20</option>
+          </select>
+        </div>
+        <p class="field__error" id="form-error" role="alert" hidden></p>
+        <button type="submit" class="btn btn--primary btn--full">Enviar por WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="src/js/main.js"></script>
+</body>
+</html>

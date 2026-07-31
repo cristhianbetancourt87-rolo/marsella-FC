@@ -44,6 +44,15 @@
   margin-bottom: var(--space-md);
 }
 
+.modal__title strong {
+  display: inline-block;
+  white-space: nowrap;
+  background: var(--gold-vintage);
+  color: var(--emerald-night);
+  padding: 0.05em 0.3em;
+  border-radius: 4px;
+}
+
 .modal__form {
   display: flex;
   flex-direction: column;

@@ -1,12 +1,27 @@
 .mirror {
+  position: relative;
   background: var(--emerald-night);
   padding-block: var(--space-2xl);
 }
 
-/* pitch-corner aplica overflow: hidden, lo que rompe el sticky del scoreboard;
-   se anula aquí con un selector más específico (id) sin afectar otras secciones. */
-#mirror.pitch-corner {
-  overflow: visible;
+/* El detalle decorativo vive en un elemento hermano (no ancestro) del scoreboard,
+   para que su overflow: hidden no rompa el position: sticky en navegadores móviles. */
+.mirror__decor {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.mirror__decor::before {
+  content: '';
+  position: absolute;
+  top: -160px;
+  right: -160px;
+  width: 320px;
+  height: 320px;
+  border: 1px solid rgba(200, 155, 60, 0.14);
+  border-radius: 50%;
 }
 
 .mirror__inner { position: relative; }

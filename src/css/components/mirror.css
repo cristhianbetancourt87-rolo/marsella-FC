@@ -87,6 +87,16 @@
   }
 }
 
+.verdict-row__label {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-vintage);
+  margin-bottom: var(--space-xs);
+}
+
 .verdict-row__gain {
   font-family: var(--font-display);
   font-weight: 800;

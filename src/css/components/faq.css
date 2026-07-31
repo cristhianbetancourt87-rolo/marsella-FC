@@ -24,6 +24,11 @@
   line-height: 1.5;
 }
 
+.faq__item p strong {
+  color: var(--charcoal-black);
+  font-weight: 700;
+}
+
 .footer {
   background: var(--emerald-night);
   color: var(--marfil-paper);

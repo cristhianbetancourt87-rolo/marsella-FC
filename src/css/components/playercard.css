@@ -79,24 +79,27 @@
 .ticket__badge {
   display: inline-block;
   font-family: var(--font-mono);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 0.6rem;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  background: var(--gold-vintage);
-  color: var(--emerald-night);
-  padding: 2px var(--space-xs);
-  border-radius: var(--radius-pill);
+  color: rgba(18, 18, 18, 0.4);
   margin-bottom: var(--space-xs);
 }
 
 .ticket__category {
-  font-family: var(--font-mono);
-  font-size: 0.66rem;
-  letter-spacing: 0.06em;
+  display: block;
+  width: fit-content;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: var(--emerald-brand);
-  margin-bottom: 2px;
+  color: var(--emerald-night);
+  background: var(--gold-vintage);
+  padding: 0.2em 0.5em;
+  margin: 0.3em 0 var(--space-xs) -0.5em;
+  border-radius: var(--radius-pill);
 }
 
 .ticket__age {

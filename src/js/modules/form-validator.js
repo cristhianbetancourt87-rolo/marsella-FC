@@ -6,7 +6,7 @@ function buildMessage(data) {
   const age = data.get('childAge');
   const category = data.get('category');
   return [
-    'Hola, quiero reclamar el Pase de 3 Clases Gratis.',
+    'Hola, quiero reclamar el Pase de 2 Clases Gratis.',
     `Nombre: ${name}`,
     `WhatsApp: ${whatsapp}`,
     `Edad: ${age}`,

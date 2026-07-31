@@ -3,6 +3,12 @@
   padding-block: var(--space-2xl);
 }
 
+/* pitch-corner aplica overflow: hidden, lo que rompe el sticky del scoreboard;
+   se anula aquí con un selector más específico (id) sin afectar otras secciones. */
+#mirror.pitch-corner {
+  overflow: visible;
+}
+
 .mirror__inner { position: relative; }
 
 .mirror__title {
